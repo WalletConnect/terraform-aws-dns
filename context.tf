@@ -1,9 +1,9 @@
 module "this" {
   source  = "app.terraform.io/wallet-connect/label/null"
-  version = "0.2.0"
+  version = "0.3.1"
 
   namespace           = var.namespace
-  environment         = var.environment
+  region              = var.region
   stage               = var.stage
   name                = var.name
   delimiter           = var.delimiter
@@ -65,7 +65,7 @@ variable "namespace" {
 }
 
 #tflint-ignore: terraform_standard_module_structure
-variable "environment" {
+variable "region" {
   type        = string
   default     = null
   description = "ID element. Usually used for region e.g. 'uw2', 'us-west-2'."
