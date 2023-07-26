@@ -14,13 +14,13 @@ Create a public Route53 zone for a fqdn and generate a wildcard certificate for 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 4.50 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.50 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 4.50 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.50 |
 
 ## Modules
 
