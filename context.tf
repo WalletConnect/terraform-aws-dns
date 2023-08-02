@@ -1,6 +1,6 @@
 module "this" {
   source  = "app.terraform.io/wallet-connect/label/null"
-  version = "0.3.1"
+  version = "0.3.2"
 
   namespace           = var.namespace
   region              = var.region
@@ -26,7 +26,7 @@ variable "context" {
   type = any
   default = {
     namespace           = null
-    environment         = null
+    region              = null
     stage               = null
     name                = null
     delimiter           = null
@@ -124,7 +124,7 @@ variable "label_order" {
   default     = null
   description = <<-EOT
     The order in which the labels (ID elements) appear in the `id`.
-    Defaults to ["namespace", "environment", "stage", "name", "attributes"].
+    Defaults to ["namespace", "region", "stage", "name", "attributes"].
     You can omit any of the 5 labels, but at least one must be present.
     EOT
 }
